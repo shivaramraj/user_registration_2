@@ -1,0 +1,27 @@
+{% extends 'dummy.html' %}
+{% block title %}
+    <title>Display_profile</title>
+    {% endblock %}
+        {% block body_block %}
+        <center>
+            
+        <p style="margin: 20px;">welcome <strong style="font-weight: bold;">{{UO.username}} </strong>` your <u><strong class="a">email is
+
+        </strong></u> {{UO.email}} and your profile
+        <br><img src="{{PO.profile.url}}" alt="" height="500px" width="300px"></p>
+
+    </center>
+
+    {% endblock %}
+
+
+    <style>
+        h1{
+            display: inline-block;
+        }
+        .a{
+            font-weight: bold;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
